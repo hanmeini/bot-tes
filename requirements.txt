@@ -1,0 +1,3 @@
+playwright>=1.44.0
+ntplib>=0.4.0
+colorama>=0.4.6        # ANSI colors on Windows terminal

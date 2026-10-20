@@ -1,0 +1,60 @@
+{
+  "target": {
+    "base_url": "https://www.tokopedia.com",
+    "flash_sale_url": "https://www.tokopedia.com/flash-sale",
+    "product_url": "",
+    "product_id": ""
+  },
+
+  "timing": {
+    "sale_start_time": "2026-07-27T23:43:00+07:00",
+    "pre_load_seconds": 10,
+    "click_delay_ms": 0,
+    "page_load_timeout_ms": 10000,
+    "element_wait_timeout_ms": 5000,
+    "ntp_sync_enabled": true,
+    "ntp_server": "time.google.com"
+  },
+
+  "browser": {
+    "headless": false,
+    "browser_type": "chromium",
+    "viewport": { "width": 1366, "height": 768 },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "locale": "id-ID",
+    "timezone_id": "Asia/Jakarta",
+    "slow_mo_ms": 0
+  },
+
+  "session": {
+    "cookies_file": "cookies.json",
+    "storage_state_file": "storage_state.json",
+    "auto_login": false
+  },
+
+  "selectors": {
+    "buy_button": "[data-testid='btnBuyProduct']",
+    "atc_button": "[data-testid='btnAddToCart']",
+    "checkout_button": "[data-testid='btnCheckout']",
+    "payment_button": "[data-testid='btnPayNow']",
+    "quantity_input": "[data-testid='inputProductQty']",
+    "flash_sale_item": ".css-1tqzjcg",
+    "popup_close": "[data-testid='btnCloseModal']",
+    "stock_label": "[data-testid='lblStockInfo']"
+  },
+
+  "retry": {
+    "max_retries": 3,
+    "retry_delay_ms": 100,
+    "on_failure": "log"
+  },
+
+  "logging": {
+    "level": "INFO",
+    "log_file": "logs/bot.log",
+    "console_output": true,
+    "timestamp_format": "%Y-%m-%d %H:%M:%S.%f"
+  },
+
+  "quantity": 1
+}
